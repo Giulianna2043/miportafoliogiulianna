@@ -1,6 +1,9 @@
 header{
-    background-image: url(descarga.png);
+    background-image: url(img/descarga.png);
     background-repeat: no-repeat;
     padding: 1000%;
     background-color: #988c8c;
+}
+ul{
+    display: inline-block
 }
