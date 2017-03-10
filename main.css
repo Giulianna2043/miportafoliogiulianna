@@ -1,6 +1,12 @@
-header{
+/*header
+{
     background-image: url(descarga.png);
     background-repeat: no-repeat;
     padding: 1000%;
-    background-color: #988c8c;
+    background-color: ;
 }
+header h1
+{
+   color: aqua;
+    font-size: 25px;
+} 
