@@ -1,40 +1,30 @@
-header
+<<<<<<< HEAD:main.css
+/*header
 {
-	position: relative;
-	z-index:100;
+    background-image: url(descarga.png);
+    background-repeat: no-repeat;
+    padding: 1000%;
+    background-color: ;
 }
-
-section
+header h1
 {
-	background: rgba(255, 0, 0, 0.3);
-	position: absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	display: none;
-	opacity:0;
+   color: aqua;
+    font-size: 25px;
+}*/ 
+/*h1 {
+    font-weight: 700;
+    font-size: 77px;
+    margin: 0;
+    padding: 0;
+    color: #d94362;
+=======
+header{
+    background-image: url(img/descarga.png);
+    background-repeat: no-repeat;
+    padding: 1000%;
+    background-color: #988c8c;
 }
-
-.visible
-{
-	opacity:1;
-	display: table;
-}
-
-.content
-{
-	background: rgba(0, 255, 0, 0.1);
-	display:table-cell;
-	vertical-align: middle;
-}
-
-
-#saludo
-{
-
-}
-#saludo h1
-{
-	margin-bottom:120px;
+ul{
+    display: inline-block
+>>>>>>> 9a4241e1f98ebf2b75347c6688c7c3157e3180c4:css/main.css
 }
