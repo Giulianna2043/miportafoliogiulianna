@@ -1,4 +1,4 @@
-<<<<<<< HEAD:main.css
+*{outline: 1px solid pink}
 /*header
 {
     background-image: url(descarga.png);
@@ -11,20 +11,89 @@ header h1
    color: aqua;
     font-size: 25px;
 }*/ 
-/*h1 {
+h1 {
     font-weight: 700;
     font-size: 77px;
     margin: 0;
     padding: 0;
     color: #d94362;
-=======
-header{
-    background-image: url(img/descarga.png);
-    background-repeat: no-repeat;
-    padding: 1000%;
-    background-color: #988c8c;
+    font-family: 'Roboto Slab', serif;
+    
 }
-ul{
-    display: inline-block
->>>>>>> 9a4241e1f98ebf2b75347c6688c7c3157e3180c4:css/main.css
+list-proyect{
+    list-style-image: none;
+}
+
+
+ul
+{
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+
+}
+.contacto .row .iconos icon
+{
+    width: 50px;  
+}
+
+
+
+a:hover {
+    color: #d94362;
+    transition: color 50ms;
+}
+
+
+a:active, a:hover {
+    outline: 0;
+}
+.proyecto {
+    background: #c4415d;
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+.portfolio-item-button {
+    display: inline-block;
+    border: 2px solid #ffffde;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 70px;
+    width: 300px;
+    height: 70px;
+    font-weight: 500;
+    
+}
+
+.portfolio-item-description {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.portfolio-item-title {
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+/*********@media**************/
+@media (max-width: 1199px){
+    .portfolio-item {
+    width: 100%;
+    
+    }
+    
+}
+
+    
+@media ( min-width: 350px){
+    
+  .portfolio-item-button {
+        margin-bottom:20px;
+    }  
+  /*  .about
+    {
+        display: none;
+    }
+    .descripcion{
+        width: 100%;
+    }*/
 }

@@ -1,6 +1,4 @@
-/**
- * Created by gerson on 10/03/17.
- */
+
 $(document).ready(init);
 
 var currentSection = null;
@@ -10,6 +8,7 @@ function init()
 	currentSection = $('#saludo');
 	$('#btn-saludo').click(onClickBtnSaludo);
 	$('#btn-nombres').click(onClickBtnNombre);
+    $('#btn-nombres').click(onClickBtnJuego);
 
 	TweenMax.from($('#saludo h1'), 1, {marginBottom:'0px', ease:Elastic.easeOut});
 }
@@ -21,8 +20,16 @@ function onClickBtnSaludo() {
 function onClickBtnNombre() {
 	gotoSection('juego');
 }
+function onClickBtnJuego() {
+	gotoSection('juego');
+     var jugador1=document.getElementById("jugador1");
+    var jugador2=document.getElementById("jugador2");
+    localStorage.setItem('nombre_1',jugador1.value);
+    localStorage.setItem('nombre_2',jugador2.value);
+    caremoco();
+}
 function onClickBtnNombre() {
-	gotoSection('cabecera');
+	gotoSection('juego');
 }
 
 function gotoSection(_identificadorDeSeccion)
@@ -32,6 +39,6 @@ function gotoSection(_identificadorDeSeccion)
 
 	nextSection.addClass('visible');
 
-	TweenMax.from(nextSection, 1.5, {scale:0.2, opacity:0, ease:Elastic.easeOut});
+	//TweenMax.from(nextSection, 1.5, {scale:0.2, opacity:0, ease:Elastic.easeOut});
 	currentSection = nextSection;
 }
