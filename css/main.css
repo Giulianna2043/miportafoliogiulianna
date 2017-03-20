@@ -78,6 +78,15 @@ a:active, a:hover {
     line-height: 1em;
     margin-bottom: 30px;
 }
+.icono{
+  
+    font-size: 35px;
+    color: black;
+}
+
+
+
+
 /*********@media**************/
 @media (max-width: 1199px){
     .portfolio-item {
@@ -88,16 +97,32 @@ a:active, a:hover {
 }
 
     
-@media ( min-width: 350px){
+@media (max-width:600px) and (min-width:350px){
     
   .portfolio-item-button {
         margin-bottom:20px;
-    }  
-  /*  .about
+      text-align: center
+      
+    } 
+    #adorno{
+        display: none;
+    }
+   .about
     {
         display: none;
     }
     .descripcion{
         width: 100%;
-    }*/
+    }
+    .portfolio-item-description{
+        display: none;
+    }
+    .portfolio-item-title{
+      
+      display: inline-block;
+        font-size: 20px;
+    }
+    #proyecto{
+        width: 100%;
+    }
 }
