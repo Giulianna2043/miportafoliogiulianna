@@ -1,9 +1,8 @@
-$font-family:'Roboto Slab', serif;
-$display:inline-block;
-$displaynone:none;
+$font-principal:'Roboto Slab', serif;
+$display-block: inline-block;
+$displaynone: none;
+$cien:100%;
 
-
-n
 *{outline: 1px solid pink}
 /*header
 {
@@ -23,17 +22,17 @@ h1 {
     margin: 0;
     padding: 0;
     color: #d94362;
-    font-family:$font-family;
+    font-family:$font-principal;
     
 }
 list-proyect{
-    list-style-image: none;
+    list-style-image: $displaynone;
 }
 
 
 ul
 {
-    display: $display;
+    display: $display-block;
     list-style: $displaynone;
     padding-left: 0;
     
@@ -64,7 +63,7 @@ a:active, a:hover {
     padding-bottom: 60px;}
 
 .portfolio-item-button {
-    display: $display;
+    display: $display-block;
     border: 2px solid #ffffde;
     border-radius: 7px;
     text-align: center;
@@ -89,6 +88,15 @@ a:active, a:hover {
     font-size: 35px;
     color: black;
 }
+/*.background{
+    background-image:url(../img/about2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    position: relative;
+    bottom: auto;
+    
+}*/
 
 
 
@@ -96,7 +104,7 @@ a:active, a:hover {
 /*********@media**************/
 @media (max-width: 1199px){
     .portfolio-item {
-    width: 100%;
+    width: $cien;
     
     }
     
@@ -107,28 +115,28 @@ a:active, a:hover {
     
   .portfolio-item-button {
         margin-bottom:20px;
-      text-align: center
+        text-align: center
       
     } 
     #adorno{
-        display:$displaynone;
+        display: $displaynone;
     }
    .about
     {
         display: $displaynone;
     }
     .descripcion{
-        width: 100%;
+        width: $cien;
     }
     .portfolio-item-description{
-        display:$displaynone;
+        display: $displaynone;
     }
     .portfolio-item-title{
       
-      display: $display;
+        display: $display-block;
         font-size: 20px;
     }
     #proyecto{
-        width: 100%;
+        width: $cien;
     }
 }
