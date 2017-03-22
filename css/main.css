@@ -1,6 +1,22 @@
 * {
   outline: 1px solid pink; }
 
+#inicio {
+  background-image: url(../img/descarga1.png), url(../img/dx.png), url(../img/13-ceu.png), url(../img/5-arvores.png);
+  background-repeat: no-repeat;
+  background-size: fixed;
+  background-position: left ,  right bottom, 00, 00; }
+
+#aboutme {
+  background-color: #d94362; }
+
+nav.navbar {
+  opacity: 0.5; }
+
+nav.navbar ul.nav li a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
 /*header
 {
     background-image: url(descarga.png);
@@ -70,19 +86,19 @@ a:active, a:hover {
   font-size: 35px;
   color: black; }
 
-/*.background{
-    background-image:url(../img/about2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-    position: relative;
-    bottom: auto;
-    
-}*/
+.background {
+  background-image: url(../img/about2w.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px; }
+
 /*********@media**************/
 @media (max-width: 1199px) {
   .portfolio-item {
     width: 100%; } }
+@media (min-width: 700px) {
+  .navbar {
+    text-align: center; } }
 @media (max-width: 600px) and (min-width: 350px) {
   .portfolio-item-button {
     margin-bottom: 20px;

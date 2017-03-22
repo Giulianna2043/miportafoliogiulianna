@@ -2,8 +2,31 @@ $font-principal:'Roboto Slab', serif;
 $display-block: inline-block;
 $displaynone: none;
 $cien:100%;
+$color-principal:#d94362;
 
 *{outline: 1px solid pink}
+#inicio{
+    background-image: url(../img/descarga1.png),url(../img/dx.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position:left ,  right bottom, 00, 00;
+    
+		  
+}
+#aboutme{
+    background-color: $color-principal;
+}
+
+nav.navbar {
+opacity: 0.5;
+}
+nav.navbar ul.nav li a{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  
+   
+}
+
 /*header
 {
     background-image: url(descarga.png);
@@ -21,7 +44,7 @@ h1 {
     font-size: 77px;
     margin: 0;
     padding: 0;
-    color: #d94362;
+    color: $color-principal;
     font-family:$font-principal;
     
 }
@@ -49,7 +72,7 @@ li{
 
 
 a:hover {
-    color: #d94362;
+    color: $color-principal;
     transition: color 50ms;
 }
 
@@ -88,15 +111,12 @@ a:active, a:hover {
     font-size: 35px;
     color: black;
 }
-/*.background{
-    background-image:url(../img/about2.png);
+.background{
+    background-image:url(../img/about2w.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
-    position: relative;
-    bottom: auto;
-    
-}*/
+    padding: 150px;
+}
 
 
 
@@ -108,6 +128,11 @@ a:active, a:hover {
     
     }
     
+}
+@media (min-width: 700px) { 
+            .navbar{
+                    text-align: center;
+                   }
 }
 
     
