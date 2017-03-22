@@ -3,10 +3,11 @@ $display-block: inline-block;
 $displaynone: none;
 $cien:100%;
 $color-principal:#d94362;
+$color-secundario:#ffffde;
 
 *{outline: 1px solid pink}
 #inicio{
-    background-image: url(../img/descarga1.png),url(../img/dx.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
+    background-image: url(../img/img-2.png),url(../img/2-arvore-dir.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
     background-repeat: no-repeat;
     background-size: fixed;
     background-position:left ,  right bottom, 00, 00;
@@ -14,7 +15,7 @@ $color-principal:#d94362;
 		  
 }
 #aboutme{
-    background-color: $color-principal;
+    background-color: #372d3b;
 }
 
 nav.navbar {
@@ -80,22 +81,32 @@ a:hover {
 a:active, a:hover {
     outline: 0;
 }
-.proyecto {
-    background: #c4415d;
-    padding-top: 60px;
-    padding-bottom: 60px;}
+#proyecto {
+    background-image: url(../img/nuevo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #c4415d;
+    ;}
 
 .portfolio-item-button {
     display: $display-block;
-    border: 2px solid #ffffde;
+    border: 2px solid $color-secundario;
     border-radius: 7px;
     text-align: center;
     line-height: 70px;
     width: 300px;
     height: 70px;
     font-weight: 500;
+    color:$color-secundario;
+    font-size: 20px;
+}   
     
+    .portfolio-item-button:hover {
+    background: $color-secundario;
+    color: #c4415d;
 }
+    
+
 
 .portfolio-item-description {
     font-size: 20px;
@@ -106,17 +117,22 @@ a:active, a:hover {
     line-height: 1em;
     margin-bottom: 30px;
 }
+#contacto{
+    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/5-arvores.png);
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position:left ,  right bottom, 00;
+    padding-bottom: 500px;
+    
+    
+		  
+}
 .icono{
   
     font-size: 35px;
     color: black;
 }
-.background{
-    background-image:url(../img/about2w.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 150px;
-}
+
 
 
 
