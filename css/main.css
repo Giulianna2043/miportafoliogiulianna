@@ -1,21 +1,20 @@
-* {
-  outline: 1px solid pink; }
-
 #inicio {
   background-image: url(../img/img-2.png), url(../img/2-arvore-dir.png), url(../img/13-ceu.png), url(../img/5-arvores.png);
   background-repeat: no-repeat;
   background-size: fixed;
   background-position: left ,  right bottom, 00, 00; }
 
+nav.navbar {
+  opacity: 0.5; }
+  nav.navbar ul .nav li a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px; }
+
 #aboutme {
   background-color: #372d3b; }
 
-nav.navbar {
-  opacity: 0.5; }
-
-nav.navbar ul.nav li a {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px; }
+#habilidades {
+  background-color: #372d3b; }
 
 /*header
 {
@@ -37,9 +36,6 @@ h1 {
   color: #d94362;
   font-family: "Roboto Slab", serif; }
 
-list-proyect {
-  list-style-image: none; }
-
 ul {
   display: inline-block;
   list-style: none;
@@ -47,9 +43,6 @@ ul {
 
 li {
   padding-bottom: 5%; }
-
-.contacto .row .iconos icon {
-  width: 50px; }
 
 a:hover {
   color: #d94362;
@@ -73,32 +66,41 @@ a:active, a:hover {
   width: 300px;
   height: 70px;
   font-weight: 500;
-  color: #ffffde;
   font-size: 20px; }
+
+.portfolio-item-description a {
+  color: #ffffde;
+  text-decoration: none; }
 
 .portfolio-item-button:hover {
   background: #ffffde;
   color: #c4415d; }
-
-.portfolio-item-description {
-  font-size: 20px;
-  margin-bottom: 40px; }
 
 .portfolio-item-title {
   font-size: 48px;
   line-height: 1em;
   margin-bottom: 30px; }
 
+.portfolio-item-description {
+  font-size: 20px;
+  margin-bottom: 40px; }
+
 #contacto {
-  background-image: url(../img/1-teto.png), url(../img/camada4-teto-arvores.png), url(../img/fundo.png), url(../img/5-arvores.png);
+  background-image: url(../img/1-teto.png), url(../img/camada4-teto-arvores.png), url(../img/fundo.png);
   background-repeat: no-repeat;
   background-size: fixed;
   background-position: left ,  right bottom, 00;
   padding-bottom: 500px; }
 
-.icono {
+.contacto .row .iconos .icono {
+  width: 50px;
   font-size: 35px;
   color: black; }
+
+.icono {
+  font-size: 35px;
+  color: black;
+  list-style: none; }
 
 /*********@media**************/
 @media (max-width: 1199px) {

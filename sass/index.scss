@@ -1,33 +1,42 @@
 $font-principal:'Roboto Slab', serif;
+$font-sec:"Helvetica Neue", Helvetica, Arial, sans-serif;
 $display-block: inline-block;
 $displaynone: none;
 $cien:100%;
 $color-principal:#d94362;
 $color-secundario:#ffffde;
+$color-oscuro:#372d3b;
 
-*{outline: 1px solid pink}
+//*{outline: 1px solid pink}
+
 #inicio{
     background-image: url(../img/img-2.png),url(../img/2-arvore-dir.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
     background-repeat: no-repeat;
     background-size: fixed;
     background-position:left ,  right bottom, 00, 00;
-    
-		  
-}
-#aboutme{
-    background-color: #372d3b;
 }
 
 nav.navbar {
-opacity: 0.5;
-}
-nav.navbar ul.nav li a{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-  
-   
+    opacity: 0.5;
+    ul{
+        .nav{
+            li{
+                a{
+                     font-family: $font-sec;
+                    font-size: 18px;  
+                }
+            }
+        }
+    }
 }
 
+#aboutme{
+    background-color: $color-oscuro;
+}
+#habilidades{
+    background-color: $color-oscuro;
+   
+}
 /*header
 {
     background-image: url(descarga.png);
@@ -47,30 +56,17 @@ h1 {
     padding: 0;
     color: $color-principal;
     font-family:$font-principal;
-    
 }
-list-proyect{
-    list-style-image: $displaynone;
-}
-
 
 ul
 {
     display: $display-block;
     list-style: $displaynone;
     padding-left: 0;
-    
-
 }
 li{
     padding-bottom: 5%;
 }
-.contacto .row .iconos icon
-{
-    width: 50px;  
-}
-
-
 
 a:hover {
     color: $color-principal;
@@ -86,7 +82,7 @@ a:active, a:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #c4415d;
-    ;}
+    }
 
 .portfolio-item-button {
     display: $display-block;
@@ -97,43 +93,56 @@ a:active, a:hover {
     width: 300px;
     height: 70px;
     font-weight: 500;
-    color:$color-secundario;
+    //color:$color-secundario;
     font-size: 20px;
-}   
+} 
+.portfolio-item-description a {
+    color: $color-secundario;
+    text-decoration: none;
     
-    .portfolio-item-button:hover {
+}
+ .portfolio-item-button:hover {
     background: $color-secundario;
     color: #c4415d;
+     
 }
-    
 
-
-.portfolio-item-description {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
 .portfolio-item-title {
     font-size: 48px;
     line-height: 1em;
     margin-bottom: 30px;
+}    
+.portfolio-item-description {
+    font-size: 20px;
+    margin-bottom: 40px;
+   
 }
+
 #contacto{
-    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/5-arvores.png);
+    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png);
     background-repeat: no-repeat;
     background-size: fixed;
     background-position:left ,  right bottom, 00;
     padding-bottom: 500px;
-    
-    
-		  
 }
+.contacto{
+    .row {
+        .iconos{
+            .icono{
+                width: 50px;
+                font-size: 35px;
+                color: black;
+            }
+        }
+    }
+}  
+
+
 .icono{
-  
     font-size: 35px;
     color: black;
+    list-style: $displaynone;
 }
-
-
 
 
 
