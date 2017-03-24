@@ -10,10 +10,10 @@ $color-oscuro:#372d3b;
 //*{outline: 1px solid pink}
 
 #inicio{
-    background-image: url(../img/img-2.png),url(../img/2-arvore-dir.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
+    background-image: url(../img/1-arvore-esq.png),url(../img/2-arvore-dir.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
     background-repeat: no-repeat;
     background-size: fixed;
-    background-position:left ,  right bottom, 00, 00;
+    background-position:left ,  right , 00, 00;
 }
 
 nav.navbar {
@@ -36,6 +36,19 @@ nav.navbar {
 #habilidades{
     background-color: $color-oscuro;
    
+}
+
+img {
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -ms-transition: margin 0.5s ease-out;
+    transition: margin 0.5s ease-out;
+}
+.ex1 img:hover {
+    margin-top: 2px;
 }
 /*header
 {
@@ -78,7 +91,7 @@ a:active, a:hover {
     outline: 0;
 }
 #proyecto {
-    background-image: url(../img/nuevo.png);
+    background-image: url(../img/1-chao.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #c4415d;
@@ -119,10 +132,10 @@ a:active, a:hover {
 }
 
 #contacto{
-    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png);
+    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/camada2-teto-arvores.png);
     background-repeat: no-repeat;
     background-size: fixed;
-    background-position:left ,  right bottom, 00;
+    background-position:left ,  right bottom, 00,top;
     padding-bottom: 500px;
 }
 .contacto{
@@ -163,6 +176,9 @@ a:active, a:hover {
     
 @media (max-width:600px) and (min-width:350px){
     
+    .decripcion h4{
+        padding-left: 0px;
+    }
   .portfolio-item-button {
         margin-bottom:20px;
         text-align: center
