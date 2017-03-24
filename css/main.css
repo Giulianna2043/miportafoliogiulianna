@@ -3,9 +3,8 @@
     height: 39px;
 }*/
 #inicio {
-  background-image: url(../img/1-arvore-esq.png), url(../img/2-arvore-dir.png), url(../img/13-ceu.png), url(../img/5-arvores.png);
+  background-image: url(../img/probar.jpeg);
   background-repeat: no-repeat;
-  background-position: left ,  right , 00, 00;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
@@ -24,7 +23,7 @@ nav.navbar {
   font-family: "Roboto Slab", serif; }
 
 #aboutme {
-  background-color: #372d3b;
+  background-image: url(../img/fondo2.jpg);
   padding-bottom: 10%; }
 
 #habilidades {

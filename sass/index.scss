@@ -20,10 +20,10 @@ $color-fdd:#c4415d;
 
 
 #inicio{
-    background-image: url(../img/1-arvore-esq.png),url(../img/2-arvore-dir.png),url(../img/13-ceu.png),url(../img/5-arvores.png);
+    background-image: url(../img/probar.jpeg);
     background-repeat: no-repeat;
     //background-size: fixed;
-    background-position:left ,  right , 00, 00;
+    //background-position:left ,  right , 00, 00;
     background-attachment: fixed;
     background-position: center;
     //background-repeat: no-repeat;
@@ -55,7 +55,7 @@ nav.navbar {
     
 }
 #aboutme{
-    background-color: $color-oscuro;
+    background-image: url(../img/fondo2.jpg);
     padding-bottom: 10%;
     
 }
