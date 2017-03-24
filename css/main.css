@@ -1,17 +1,31 @@
+/* mixins    @mixin ancho{
+    width: 10px;
+    height: 39px;
+}*/
 #inicio {
   background-image: url(../img/1-arvore-esq.png), url(../img/2-arvore-dir.png), url(../img/13-ceu.png), url(../img/5-arvores.png);
   background-repeat: no-repeat;
-  background-size: fixed;
-  background-position: left ,  right , 00, 00; }
+  background-position: left ,  right , 00, 00;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
 
 nav.navbar {
-  opacity: 0.5; }
+  opacity: 0.5;
+  top: 0px; }
   nav.navbar ul .nav li a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px; }
 
+.navbar-default .navbar-nav > li > a {
+  font-weight: 50;
+  font-size: 30px;
+  color: #d94362;
+  font-family: "Roboto Slab", serif; }
+
 #aboutme {
-  background-color: #372d3b; }
+  background-color: #372d3b;
+  padding-bottom: 10%; }
 
 #habilidades {
   background-color: #372d3b; }
@@ -64,7 +78,7 @@ a:active, a:hover {
   outline: 0; }
 
 #proyecto {
-  background-image: url(../img/1-chao.png);
+  background-image: url(../img/1-chao.png), url(../img/2-chao.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #c4415d; }
@@ -80,13 +94,14 @@ a:active, a:hover {
   font-weight: 500;
   font-size: 20px; }
 
-.portfolio-item-description a {
+.portfolio-item-button {
   color: #ffffde;
   text-decoration: none; }
 
 .portfolio-item-button:hover {
   background: #ffffde;
-  color: #c4415d; }
+  color: #c4415d;
+  text-decoration: none; }
 
 .portfolio-item-title {
   font-size: 48px;
@@ -98,6 +113,7 @@ a:active, a:hover {
   margin-bottom: 40px; }
 
 #contacto {
+  background-color: #d94362;
   background-image: url(../img/1-teto.png), url(../img/camada4-teto-arvores.png), url(../img/fundo.png), url(../img/camada2-teto-arvores.png);
   background-repeat: no-repeat;
   background-size: fixed;
@@ -120,7 +136,27 @@ a:active, a:hover {
     width: 100%; } }
 @media (min-width: 700px) {
   .navbar {
-    text-align: center; } }
+    text-align: center; }
+
+  .menu-items {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 80px;
+    margin-top: -40px;
+    width: 100%; }
+
+  .menu {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c4415d;
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-size: 24px;
+    border: none; } }
 @media (max-width: 600px) and (min-width: 350px) {
   .decripcion h4 {
     padding-left: 0px; }
