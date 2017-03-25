@@ -3,7 +3,7 @@ $font-sec:"Helvetica Neue", Helvetica, Arial, sans-serif;
 $display-block: inline-block;
 $displaynone: none;
 $cien:100%;
-$color-principal:#d94362;
+$color-principal:#c4415d;
 $color-secundario:#ffffde;
 $color-oscuro:#372d3b;
 $color-fdd:#c4415d;
@@ -19,8 +19,8 @@ $color-fdd:#c4415d;
     
 
 
-#inicio{
-    background-image: url(../img/probar.jpeg);
+#inicio , #aboutme{
+    background-image: url(../img/fondo3.jpg);
     background-repeat: no-repeat;
     //background-size: fixed;
     //background-position:left ,  right , 00, 00;
@@ -32,7 +32,7 @@ $color-fdd:#c4415d;
 
 nav.navbar {
     opacity: 0.5;
-    //position: fixed;
+    position: fixed;
     top:0px;
     ul{
         .nav{
@@ -45,6 +45,23 @@ nav.navbar {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar-default .navbar-nav>li>a {
     font-weight: 50;
     font-size: 30px;
@@ -55,12 +72,16 @@ nav.navbar {
     
 }
 #aboutme{
-    background-image: url(../img/fondo2.jpg);
-    padding-bottom: 10%;
+    background-image: url(../img/fondo3.jpg);
+    padding: 10%;
+    background-size: cover;
     
 }
 #habilidades{
-    background-color: $color-oscuro;
+    background-image: url(../img/fondo7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
    
 }
 
@@ -105,7 +126,7 @@ ul
     padding-left: 0;
 }
 li{
-    padding-bottom: 5%;
+    //padding-bottom: 5%;
 }
 
 a:hover {
@@ -118,10 +139,10 @@ a:active, a:hover {
     outline: 0;
 }
 #proyecto {
-    background-image: url(../img/1-chao.png),url(../img/2-chao.png);
+//  background-image: url(../img/1-chao.png),url(../img/2-chao.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: $color-fdd;
+    background-color: 	#CFCFC4;
     //background-position:left ,  right bottom, 00,top;
     }
 
@@ -138,7 +159,7 @@ a:active, a:hover {
     font-size: 20px;
 } 
 .portfolio-item-button  {
-    color: $color-secundario;
+    color: #c4f2c5;
     text-decoration: none;
     
 }
@@ -162,11 +183,11 @@ a:active, a:hover {
 
 #contacto{
     background-color: $color-principal;
-    background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/camada2-teto-arvores.png);
+//  background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/camada2-teto-arvores.png);
     background-repeat: no-repeat;
     background-size: fixed;
     background-position:left ,  right bottom, 00,top;
-    padding-bottom: 500px;
+    padding-bottom: 5%;
 }
 .contacto{
     .row {
@@ -208,7 +229,8 @@ a:active, a:hover {
     margin-top: -40px;
     width: 100%;
 }
-    .menu{display: none;
+    .menu{
+    display: none;
     top: 0;
     left: 0;
     right: 0;
@@ -224,7 +246,13 @@ a:active, a:hover {
 
     
 @media (max-width:600px) and (min-width:350px){
-    
+    h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .frase{
+        text-align: center;
+    }
     .decripcion h4{
         padding-left: 0px;
     }

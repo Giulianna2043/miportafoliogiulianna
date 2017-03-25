@@ -5,12 +5,12 @@ var currentSection = null;
 
 function init()
 {
-	currentSection = $('#saludo');
-	$('#btn-saludo').click(onClickBtnSaludo);
-	$('#btn-nombres').click(onClickBtnNombre);
+	currentSection = $('#inicio');
+	$('#btn-inicio').click(onClickBtnSaludo);
+	$('#btn-aboutme').click(onClickBtnNombre);
     $('#btn-nombres').click(onClickBtnJuego);
 
-	TweenMax.from($('#saludo h1'), 1, {marginBottom:'0px', ease:Elastic.easeOut});
+	TweenMax.from($('#inicio h1'), 1, {marginBottom:'0px', ease:Elastic.easeOut});
 }
 
 function onClickBtnSaludo() {
