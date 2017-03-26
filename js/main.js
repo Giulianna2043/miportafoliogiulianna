@@ -1,5 +1,5 @@
 
-$(document).ready(init);
+/*$(document).ready(init);
 
 var currentSection = null;
 
@@ -41,4 +41,4 @@ function gotoSection(_identificadorDeSeccion)
 
 	//TweenMax.from(nextSection, 1.5, {scale:0.2, opacity:0, ease:Elastic.easeOut});
 	currentSection = nextSection;
-}
+}*/

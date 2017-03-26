@@ -12,22 +12,23 @@ $color-fdd:#c4415d;
 
 
 
-/* mixins    @mixin ancho{
-    width: 10px;
-    height: 39px;
-}*/
+    @mixin imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+  @mixin carrousel{
+    height: 200px;
+    width: 300px;
+    }
     
 
 
-#inicio , #aboutme{
+#header , #inicio , #aboutme{
     background-image: url(../img/fondo3.jpg);
-    background-repeat: no-repeat;
-    //background-size: fixed;
-    //background-position:left ,  right , 00, 00;
     background-attachment: fixed;
-    background-position: center;
-    //background-repeat: no-repeat;
-    background-size: cover;
+       @include imagen;
 }
 
 nav.navbar {
@@ -47,21 +48,6 @@ nav.navbar {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar-default .navbar-nav>li>a {
     font-weight: 50;
     font-size: 30px;
@@ -71,17 +57,10 @@ nav.navbar {
     font-family:$font-principal;
     
 }
-#aboutme{
-    background-image: url(../img/fondo3.jpg);
-    padding: 10%;
-    background-size: cover;
-    
-}
+
 #habilidades{
     background-image: url(../img/fondo7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include imagen;
    
 }
 
@@ -126,7 +105,7 @@ ul
     padding-left: 0;
 }
 li{
-    //padding-bottom: 5%;
+    list-style: $displaynone;
 }
 
 a:hover {
@@ -159,7 +138,7 @@ a:active, a:hover {
     font-size: 20px;
 } 
 .portfolio-item-button  {
-    color: #c4f2c5;
+    color:$color-principal;
     text-decoration: none;
     
 }
@@ -174,6 +153,7 @@ a:active, a:hover {
     font-size: 48px;
     line-height: 1em;
     margin-bottom: 30px;
+    color: $color-principal;
 }    
 .portfolio-item-description {
     font-size: 20px;
@@ -181,14 +161,12 @@ a:active, a:hover {
    
 }
 
-#contacto{
-    background-color: $color-principal;
-//  background-image: url(../img/1-teto.png),url(../img/camada4-teto-arvores.png),url(../img/fundo.png),url(../img/camada2-teto-arvores.png);
-    background-repeat: no-repeat;
-    background-size: fixed;
-    background-position:left ,  right bottom, 00,top;
-    padding-bottom: 5%;
-}
+#contacto {
+  background-color: #c4415d;
+  background-repeat: no-repeat;
+  background-size: fixed;
+  background-position: left ,  right bottom, 00,top;
+  padding-bottom: 5%; }
 .contacto{
     .row {
         .iconos{
@@ -199,7 +177,11 @@ a:active, a:hover {
             }
         }
     }
-}  
+} 
+
+.item{
+    @include carrousel;
+}
 
 
 .icono{
@@ -277,9 +259,15 @@ a:active, a:hover {
     .portfolio-item-title{
       
         display: $display-block;
-        font-size: 20px;
+        font-size: 30px;
+        text-align: center;
     }
     #proyecto{
         width: $cien;
     }
+}
+
+footer{
+    background-color: black;
+    color: white;
 }
