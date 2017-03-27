@@ -1,41 +1,64 @@
-/* mixins    @mixin ancho{
-    width: 10px;
-    height: 39px;
-}*/
-/* line 22, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
-#inicio {
-  background-image: url(../img/probar.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
+/* line 3, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0; }
+
+/* line 15, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+.visible {
+  opacity: 1;
+  display: table; }
+
+/* line 21, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+.content {
+  background: rgba(0, 255, 0, 0.1);
+  display: table-cell;
+  vertical-align: middle; }
 
 /* line 33, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+#saludo h1 {
+  margin-bottom: 120px; }
+
+/* line 81, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+#inicio, #aboutme, #header {
+  background-image: url(../img/fondo3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* line 88, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 nav.navbar {
   opacity: 0.5;
+  position: fixed;
   top: 0px; }
-  /* line 40, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
-  nav.navbar ul .nav li a {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px; }
+  /* line 93, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  nav.navbar ul .nav {
+    padding-left: 50%; }
+    /* line 96, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+    nav.navbar ul .nav li a {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 18px; }
 
-/* line 48, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 106, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .navbar-default .navbar-nav > li > a {
   font-weight: 50;
   font-size: 30px;
-  color: #d94362;
+  color: #c4415d;
   font-family: "Roboto Slab", serif; }
 
-/* line 57, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
-#aboutme {
-  background-image: url(../img/fondo2.jpg);
-  padding-bottom: 10%; }
-
-/* line 62, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 117, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 #habilidades {
-  background-color: #372d3b; }
+  background-image: url(../img/fondo7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-/* line 67, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 123, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 img {
   border: 5px solid #ccc;
   float: left;
@@ -45,7 +68,7 @@ img {
   -ms-transition: margin 0.5s ease-out;
   transition: margin 0.5s ease-out; }
 
-/* line 77, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 133, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .ex1 img:hover {
   margin-top: 2px; }
 
@@ -61,42 +84,41 @@ header h1
    color: aqua;
     font-size: 25px;
 }*/
-/* line 92, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 148, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 h1 {
   font-weight: 700;
   font-size: 77px;
   margin: 0;
   padding: 0;
-  color: #d94362;
+  color: #c4415d;
   font-family: "Roboto Slab", serif; }
 
-/* line 101, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 157, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 ul {
   display: inline-block;
   list-style: none;
   padding-left: 0; }
 
-/* line 107, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 163, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 li {
-  padding-bottom: 5%; }
+  list-style: none; }
 
-/* line 111, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 167, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 a:hover {
-  color: #d94362;
+  color: #c4415d;
   transition: color 50ms; }
 
-/* line 117, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 173, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 a:active, a:hover {
   outline: 0; }
 
-/* line 120, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 176, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 #proyecto {
-  background-image: url(../img/1-chao.png), url(../img/2-chao.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #c4415d; }
+  background-color: #CFCFC4; }
 
-/* line 128, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 184, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .portfolio-item-button {
   display: inline-block;
   border: 2px solid #ffffde;
@@ -108,44 +130,49 @@ a:active, a:hover {
   font-weight: 500;
   font-size: 20px; }
 
-/* line 140, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 196, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .portfolio-item-button {
-  color: #ffffde;
+  color: #c4415d;
   text-decoration: none; }
 
-/* line 145, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 201, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .portfolio-item-button:hover {
   background: #ffffde;
   color: #c4415d;
   text-decoration: none; }
 
-/* line 152, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 208, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .portfolio-item-title {
   font-size: 48px;
   line-height: 1em;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #c4415d; }
 
-/* line 157, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 214, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .portfolio-item-description {
   font-size: 20px;
   margin-bottom: 40px; }
 
-/* line 163, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 220, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 #contacto {
-  background-color: #d94362;
-  background-image: url(../img/1-teto.png), url(../img/camada4-teto-arvores.png), url(../img/fundo.png), url(../img/camada2-teto-arvores.png);
+  background-color: #c4415d;
   background-repeat: no-repeat;
   background-size: fixed;
   background-position: left ,  right bottom, 00,top;
-  padding-bottom: 500px; }
+  padding-bottom: 5%; }
 
-/* line 174, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 229, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .contacto .row .iconos .icono {
   width: 50px;
   font-size: 35px;
   color: black; }
 
-/* line 184, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+/* line 238, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+.item {
+  height: 100%;
+  width: 100%; }
+
+/* line 243, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .icono {
   font-size: 35px;
   color: black;
@@ -153,22 +180,22 @@ a:active, a:hover {
 
 /*********@media**************/
 @media (max-width: 1199px) {
-  /* line 194, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 253, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .portfolio-item {
     width: 100%; } }
 
 @media (min-width: 700px) {
-  /* line 201, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 260, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .navbar {
     text-align: center; }
-  /* line 204, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 263, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .menu-items {
     display: inline-block;
     vertical-align: middle;
     line-height: 80px;
     margin-top: -40px;
     width: 100%; }
-  /* line 211, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 270, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .menu {
     display: none;
     top: 0;
@@ -183,31 +210,44 @@ a:active, a:hover {
     border: none; } }
 
 @media (max-width: 600px) and (min-width: 350px) {
-  /* line 228, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 287, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  h1 {
+    font-size: 40px;
+    width: 100%; }
+  /* line 291, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  .frase {
+    text-align: center; }
+  /* line 294, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .decripcion h4 {
     padding-left: 0px; }
-  /* line 231, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 297, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .portfolio-item-button {
     margin-bottom: 20px;
     text-align: center; }
-  /* line 236, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 302, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   #adorno {
     display: none; }
-  /* line 239, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 305, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .about {
     display: none; }
-  /* line 243, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 309, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .descripcion {
     width: 100%; }
-  /* line 246, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 312, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .portfolio-item-description {
     display: none; }
-  /* line 249, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+  /* line 315, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   .portfolio-item-title {
     display: inline-block;
-    font-size: 20px; }
-  /* line 254, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+    font-size: 30px;
+    text-align: center; }
+  /* line 321, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
   #proyecto {
     width: 100%; } }
+
+/* line 326, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
+footer {
+  background-color: black;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */

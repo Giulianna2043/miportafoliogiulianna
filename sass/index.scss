@@ -1,3 +1,56 @@
+
+
+section
+{
+	//background: rgba(255, 0, 0, 0.3);
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display: none;
+	opacity:0;
+}
+
+.visible
+{
+	opacity:1;
+	display: table;
+}
+
+.content
+{
+	background: rgba(0, 255, 0, 0.1);
+	display:table-cell;
+	vertical-align: middle;
+}
+
+
+#saludo
+{
+
+}
+#saludo h1
+{
+	margin-bottom:120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $font-principal:'Roboto Slab', serif;
 $font-sec:"Helvetica Neue", Helvetica, Arial, sans-serif;
 $display-block: inline-block;
@@ -19,15 +72,16 @@ $color-fdd:#c4415d;
     }
 
   @mixin carrousel{
-    height: 200px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     }
     
 
 
-#header , #inicio , #aboutme{
+ #inicio , #aboutme , #header {
     background-image: url(../img/fondo3.jpg);
     background-attachment: fixed;
+    
        @include imagen;
 }
 
@@ -37,6 +91,7 @@ nav.navbar {
     top:0px;
     ul{
         .nav{
+            padding-left: 50%;
             li{
                 a{
                      font-family: $font-sec;
@@ -55,6 +110,7 @@ nav.navbar {
    // padding: 5%;
     color: $color-principal;
     font-family:$font-principal;
+    
     
 }
 
