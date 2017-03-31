@@ -141,4 +141,12 @@ footer a:hover {
 textarea {
   resize: none; }
 
+/*-------------------media queris-------------------------------------*/
+@media (max-width: 600px) {
+  .danza {
+    display: none;
+  }
+}
+
+
 /*# sourceMappingURL=main.css.map */
