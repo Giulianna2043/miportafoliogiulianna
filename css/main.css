@@ -11,6 +11,10 @@ h3, h4 {
 .container {
   padding: 80px 120px; }
 
+/*.item{
+    height: 700px;
+    width: 1200px;
+}*/
 .person {
   border: 10px solid transparent;
   margin-bottom: 25px;
@@ -135,18 +139,9 @@ footer a:hover {
   color: #777;
   text-decoration: none; }
 
-.form-control {
-  border-radius: 0; }
-
-textarea {
-  resize: none; }
-
 /*-------------------media queris-------------------------------------*/
 @media (max-width: 600px) {
   .danza {
-    display: none;
-  }
-}
-
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
