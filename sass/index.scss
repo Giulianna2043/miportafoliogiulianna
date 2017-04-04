@@ -1,11 +1,6 @@
-
-
-
 $fontlat: Lato, sans-serif;
 $colorletra:#777;
 $colorsec:#fff;
-
-
 
 
 body {
@@ -34,7 +29,7 @@ body {
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
+      filter: grayscale(90%);
       width: 100%; /* Set width to 100% */
       margin: auto;
   }
