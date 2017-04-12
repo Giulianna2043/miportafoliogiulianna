@@ -32,8 +32,8 @@ h3, h4 {
   color: #fff !important; }
 
 .item {
-  height: 433px;
-  width: 766px; }
+  height: 733px;
+  width: 100%; }
 
 @media (max-width: 600px) {
   .carousel-caption {

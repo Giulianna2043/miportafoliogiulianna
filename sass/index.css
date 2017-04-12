@@ -40,8 +40,8 @@ h3, h4 {
 
 /* line 39, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
 .item {
-  height: 433px;
-  width: 766px; }
+  height: 733px;
+  width: 100%; }
 
 @media (max-width: 600px) {
   /* line 44, C:/LABORATORIA/java/portafolio-lab/sass/index.scss */
